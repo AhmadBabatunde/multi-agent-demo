@@ -1,0 +1,24 @@
+# requirements.txt
+# This file lists the dependencies required for the multi-agent RAG system.
+fastapi
+uvicorn
+python-dotenv
+python-multipart
+langchain
+langchain-google-genai
+langgraph
+langchain-community
+langchain-core
+pypdf
+python-docx
+unstructured
+docx2txt
+chromadb
+sentence-transformers
+pydantic
+typing-extensions
+python-dateutil
+requests
+gunicorn
+httptools
+uvloop
