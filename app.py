@@ -35,7 +35,6 @@ from langgraph.config import get_store
 
 from dotenv import load_dotenv
 load_dotenv()
-from google import genai
 
 # This should be configured if you are using the genai client directly, but langchain handles it.
 # client = genai.Client() 

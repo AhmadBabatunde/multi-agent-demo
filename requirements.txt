@@ -1,25 +1,27 @@
-# requirements.txt
-# This file lists the dependencies required for the multi-agent RAG system.
+# Core LangChain ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-openai
+langchain-chroma
+
+# LangGraph ecosystem
+langgraph
+langmem
+
+# Web framework & API
 fastapi
 uvicorn
-langchain-openai
-python-dotenv
-python-multipart
-langchain
-langchain-google-genai
-langgraph
-langchain-community
-langchain-core
-pypdf
+pydantic
+
+# File handling
 python-docx
 unstructured
-docx2txt
-chromadb
-sentence-transformers
-pydantic
-typing-extensions
-python-dateutil
+pdfminer.six
+
+# Environment variables
+python-dotenv
+
+# HTTP requests
 requests
-gunicorn
-httptools
-uvloop
