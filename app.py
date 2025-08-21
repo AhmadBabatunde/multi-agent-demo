@@ -122,8 +122,18 @@ text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=20
 # Initialize vector store - MODIFIED: Now we'll create it once and reuse it
 import chromadb
 
+import chromadb
+from chromadb.api import ClientAPI
+from chromadb.api.models.Collection import Collection
+from fastapi import Depends
+
 # Connect to the running server
-client = chromadb.HttpClient(host="localhost", port=7000)
+#client = chromadb.HttpClient(host="localhost", port=7000)
+client = chromadb.CloudClient(
+  api_key='ck-AWp8K3jRGnUnmviTfLBoU8UVufrxYyn6PVKPdT4cJxZe',
+  tenant='2b67c962-4b87-4a3c-a60c-77e11df14e50',
+  database='multi-agent-demo'
+)
 vector_store = Chroma(
     collection_name="multiAgent_collection",
     embedding_function=embeddings,
