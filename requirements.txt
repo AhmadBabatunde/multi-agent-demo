@@ -14,6 +14,7 @@ langmem
 fastapi
 uvicorn
 pydantic
+python-multipart
 
 # File handling
 python-docx
