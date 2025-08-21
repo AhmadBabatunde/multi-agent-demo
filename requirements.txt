@@ -2,6 +2,7 @@
 # This file lists the dependencies required for the multi-agent RAG system.
 fastapi
 uvicorn
+langchain-openai
 python-dotenv
 python-multipart
 langchain
